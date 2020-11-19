@@ -1,0 +1,106 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://bootswatch.com/4/solar/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+    integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+  <link href="/favicon.ico" rel="icon" type="image/x-icon" />
+  <link rel="stylesheet" href="/css/style.css">
+
+  <title>Covid-19 Tracker</title>
+</head>
+
+<body>
+
+  <div class="jumbotron text-center pb-3 pt-4">
+    <h1 class="display-4 header">COVID-19 TRACKER <i class="fas fa-virus text-success"></i></h1>
+
+    <form class="change-location form-group">
+      <label for="city" class="label col-form-label col-form-label-md mb-2">Enter the country you'd like up to date
+        statistics for
+        here</label>
+      <div class="input-div"><input type="text" name="city" class="input form-control form-control-md"
+          placeholder="For England, Scotland etc, enter 'UK'"></div>
+    </form>
+  </div>
+
+  <p class="lead info text-center mb-4 mt-1"></p>
+
+  <div class="display d-none">
+    <div class="cards row mb-3 align-items-center justify-content-center text-center mr-0 pr-0">
+      <div class="card text-dark bg-light mb-3" style="max-width: 20rem;">
+        <div class="card-header"><i class="fas fa-head-side-mask"></i> New Cases</div>
+        <div class="card-body">
+          <div class="new-cases">
+            <h4 class="card-title">Primary card title</h4>
+          </div>
+          <p class="card-text">New positive cases of Covid-19 in the last 24 hours.</p>
+        </div>
+      </div>
+
+      <div class="card text-white bg-secondary mb-3" style="max-width: 20rem;">
+        <div class="card-header"><i class="fas fa-head-side-virus"></i> Total Cases</div>
+        <div class="card-body">
+          <div class="total-cases">
+            <h4 class="card-title">Primary card title</h4>
+          </div>
+          <p class="card-text">Total active positive cases of Covid-19 currently.</p>
+        </div>
+      </div>
+
+      <div class="card text-white bg-success mb-3  mobile-margin col-md-" style="max-width: 20rem;">
+        <div class="card-header"><i class="fas fa-users"></i> Cases per 1 mill pop</div>
+        <div class="card-body">
+          <div class="cases-1mill">
+            <h4 class="card-title">Primary card title</h4>
+          </div>
+          <p class="card-text">Active cases per 1 million of the population currently.</p>
+        </div>
+      </div>
+    </div>
+    <div class="cards row mb-3 align-items-center justify-content-center text-center mr-0 pr-0">
+      <div class="card text-white bg-danger mb-3" style="max-width: 20rem;">
+        <div class="card-header"><i class="fas fa-procedures"></i> New Deaths
+        </div>
+        <div class="card-body">
+          <div class="new-deaths">
+            <h4 class="card-title">Primary card title</h4>
+          </div>
+          <p class="card-text">The amount of deaths from Covid-19 in the last 24 hours.</p>
+        </div>
+      </div>
+
+      <div class="card text-warning bg-dark mb-3" style="max-width: 20rem;">
+        <div class="card-header"><i class="fas fa-ambulance"> </i> Total Deaths</div>
+        <div class="card-body">
+          <div class="total-deaths">
+            <h4 class="card-title">Primary card title</h4>
+          </div>
+          <p class="card-text">The total amount of deaths from Covid-19 as of today.</p>
+        </div>
+      </div>
+
+      <div class="card text-white bg-info mb-3" style="max-width: 20rem;">
+        <div class="card-header"><i class="fas fa-vial"> </i> Total Tests</div>
+        <div class="card-body">
+          <div class="total-tests">
+            <h4 class="card-title">Primary card title</h4>
+          </div>
+          <p class="card-text">The amount of Covid-19 tests conducted so far.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  </div>
+
+  <script src="/app.js"></script>
+  <script src="/ui.js"></script>
+
+</body>
+
+</html>
